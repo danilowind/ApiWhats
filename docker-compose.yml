@@ -41,7 +41,7 @@ volumes:
     external: true
     name: api_zdg_sessions
 
-#networks:
-  #comunidadezdg:
-    #name: comunidadezdg
-    #external: true
+networks:
+  comunidadezdg:
+    name: comunidadezdg
+    external: true
