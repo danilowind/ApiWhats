@@ -3,8 +3,8 @@ version: '3.8'
 services:
   api_zdg:
     image: chrishubert/whatsapp-web-api:latest
-    networks:
-      - comunidadezdg
+    #networks:
+      #- comunidadezdg
     volumes:
     - api_zdg_sessions:/usr/src/app/sessions
     environment:
@@ -41,7 +41,7 @@ volumes:
     external: true
     name: api_zdg_sessions
 
-networks:
-  comunidadezdg:
-    name: comunidadezdg
-    external: true
+#networks:
+  #comunidadezdg:
+    #name: comunidadezdg
+    #external: true
